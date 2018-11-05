@@ -45,13 +45,13 @@ def getTourPointVisitor(yyyymm, sido, gungu, nPagenum, nItems):
 
 # [CODE 2]
 def getTourPointData(item, yyyymm, jsonResult):
-    addrCd = 0 if 'addrCd' not in item.keys() else item['addrCd']       # 지역 코드
-    gungu = '' if 'gungu' not in item.keys() else item['gungu']         # 시군구
-    sido = '' if 'sido' not in item.keys() else item['sido']            # 시도
-    resNm = '' if 'resNm' not in item.keys() else item['resNm']         # 관광지
-    rnum = 0 if 'rnum' not in item.keys() else item['rnum']             # 관광지 인덱스
-    ForNum = 0 if 'csForCnt' not in item.keys() else item['csForCnt']   # 외국인 방문객 수
-    NatNum = 0 if 'csNatCnt' not in item.keys() else item['csNatCnt']   # 내국인 방문객 수
+    addrCd = 0 if 'addrCd' not in item.keys() else item['addrCd']        # 지역 코드
+    gungu = '' if 'gungu' not in item.keys() else item['gungu']          # 시군구
+    sido = '' if 'sido' not in item.keys() else item['sido']             # 시도
+    resNm = '' if 'resNm' not in item.keys() else item['resNm']          # 관광지
+    rnum = 0 if 'rnum' not in item.keys() else item['rnum']              # 관광지 인덱스
+    ForNum = 0 if 'csForCnt' not in item.keys() else item['csForCnt']    # 외국인 방문객 수
+    NatNum = 0 if 'csNatCnt' not in item.keys() else item['csNatCnt']    # 내국인 방문객 수
 
     jsonResult.append({'yyyymm':yyyymm, 'addrCd':addrCd, 'gungu':gungu, 'sido':sido,
                        'resNm':resNm, 'rnum':rnum, 'ForNum':ForNum, 'NatNum':NatNum})
