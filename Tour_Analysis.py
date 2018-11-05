@@ -22,8 +22,8 @@ def Make_Graph():
     ## ggplot 스타일시트를 사용하여 R용 시각화 패키지 ggplot2의 스타일을 재현
     plt.style.use('ggplot')
 
-    fig = plt.figure()              ## 그림을 만들고
-    ax1 = fig.add_subplot(1,1,1)    ## 하위 그래프를 추가 - 1,1,1 : ax1이 유일한(1행, 1열, 1개) 하위 그래프임을 의미
+    fig = plt.figure()             ## 그림을 만들고
+    ax1 = fig.add_subplot(1,1,1)   ## 하위 그래프를 추가 - 1,1,1 : ax1이 유일한(1행, 1열, 1개) 하위 그래프임을 의미
 
     ## Y축 : spot_index, X축 : number_tourist, 막대가 Y축 레이블의 중앙에 위치하도록 지정
     ax1.barh(spot_index, number_tourist, align='center', color='darkblue')  ## 수평 막대 그래프 생성
